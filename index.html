@@ -31,8 +31,16 @@
                     <a class="nav-link" href="#"
                       >Home <span class="sr-only">(current)</span></a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#quest">Questionnaire</a>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Questionnaire
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="adhd.html">ADHD</a>
+                      <a class="dropdown-item" href="anxiety.html">Anxiety</a>
+                      <a class="dropdown-item" href="bipolar.html">Bipolar Disorder</a>
+                      <a class="dropdown-item" href="depression.html">Depression</a>
+                    </div>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link" href="#about">About</a>
@@ -52,361 +60,51 @@
                   <p class="mb-4">
                     Mental health includes our emotional, psychological, and social well-being. It affects how we think, feel, and act. It also helps determine how we handle stress, relate to others, and make choices. Mental health is important at every stage of life, from childhood and adolescence through adulthood.
                   </p>
-                  <button class="btn btn-warning font-weight-bold">
+                  <button class="btn btn-warning font-weight-bold" data-toggle="modal" data-target="#exampleModalCenter">
                     Check yours!
                   </button>
+
+                  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="exampleModalCenterTitle">Take a Test</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                          </button>
+                        </div>
+                        <div class="modal-body">
+                            Are you thinking about seeking the help of a therapist? If certain issues have been causing problems in your life and you aren't sure how to make the necessary changes, therapy can help. With the help of a professional, you can get out of an unhealthy cognitive, emotional, and behavioral pattern.
+<br>
+                            Pick a Disorder you think you might carry, fill out the following questionnaire truthfully, paying special attention to the specified time period to which the questions refer. The results will only be helpful if you answer in an honest and complete manner.
+                        </div>
+                        <div class="modal-header">
+                          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                          <button class="btn btn-warning font-weight-bold" onclick=" window.open('adhd.html','_blank')">
+                            ADHD
+                          </button>
+                          <button class="btn btn-warning font-weight-bold" onclick=" window.open('anxiety.html','_blank')">
+                            Anxiety
+                          </button>
+                          <button class="btn btn-warning font-weight-bold" onclick=" window.open('bipolar.html','_blank')">
+                            Bipolar
+                          </button>
+                          <button class="btn btn-warning font-weight-bold" onclick=" window.open('depression.html','_blank')">
+                            Depression
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
                 </div>
                 <div class="col-md-6">
                   <img
                     src="https://image.freepik.com/free-vector/illustration-with-young-people-talking_52683-29824.jpg" alt="" class="img-fluid"/>
                 </div>
               </div>
-              <div id="quest" style="margin-top: 60px;">
-              <h1 class="mb-3 font-weight-bold">
-                Questionnaire
-              </h1>
-              <p class="mb-4">
-                Answer these questions honestly so we can let you know about your mental health in a better way. <br><br>
-              </p>
-              <ol>
-              <!-- Question 1-->
-              <li>
-              <p class="mb-4">
-                I was very anxious, worried or scared about a lot of things in my life.
-              </p>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                <label class="form-check-label" for="exampleRadios1">
-                  Never
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                  A Few Times
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3">
-                  Sometimes
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3">
-                  Often
-                </label>
-              </div>
-              <div class="form-check">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                <label class="form-check-label" for="exampleRadios3">
-                  Constantly
-                </label>
-              </div></li>
-              <!--Question 1 Ends-->
-              <br><br>
-              <!-- Question 2-->
-              <li>
-                <p class="mb-4">
-                I felt that my worry was out of my control.
-                </p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                  <label class="form-check-label" for="exampleRadios1">
-                    Never
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
-                    A Few Times
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Sometimes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Often
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Constantly
-                  </label>
-                </div></li>
-                <!--Question 2 Ends-->
-                <br><br>
-                <!-- Question 3-->
-              <li>
-                <p class="mb-4">
-                I felt restless, agitated, frantic, or tense.
-                </p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                  <label class="form-check-label" for="exampleRadios1">
-                    Never
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
-                    A Few Times
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Sometimes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Often
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Constantly
-                  </label>
-                </div></li>
-                <!--Question 3 Ends-->
-                <br><br>
-                <!-- Question 4-->
-              <li>
-                <p class="mb-4">
-                I had trouble sleeping - I could not fall or stay asleep, and/or didn't feel well-rested when I woke up.
-                </p>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                  <label class="form-check-label" for="exampleRadios1">
-                    Never
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                  <label class="form-check-label" for="exampleRadios2">
-                    A Few Times
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Sometimes
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Often
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                  <label class="form-check-label" for="exampleRadios3">
-                    Constantly
-                  </label>
-                </div></li>
-                <!--Question 4 Ends-->
-                <br><br>
-                <!-- Question 5-->
-                <li>
-                  <p class="mb-4">
-                    My heart would skip beat, was pounding, or my heart rate increased.
-                  </p>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                    <label class="form-check-label" for="exampleRadios1">
-                      Not At All
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                    <label class="form-check-label" for="exampleRadios2">
-                      Mild
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                      Moderate
-                    </label>
-                  </div>
-                  <div class="form-check">
-                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                    <label class="form-check-label" for="exampleRadios3">
-                      Severe
-                    </label>
-                  </div></li>
-                  <!--Question 5 Ends-->
-                  <br><br>
-                  <!-- Question 6-->
-                  <li>
-                    <p class="mb-4">
-                        I was sweating profusely.
-                    </p>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                      <label class="form-check-label" for="exampleRadios1">
-                        Not At All
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                      <label class="form-check-label" for="exampleRadios2">
-                        Mild
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                      <label class="form-check-label" for="exampleRadios3">
-                        Moderate
-                      </label>
-                    </div>
-                    <div class="form-check">
-                      <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                      <label class="form-check-label" for="exampleRadios3">
-                        Severe
-                      </label>
-                    </div></li>
-                    <!--Question 6 Ends-->
-                    <br><br>
-                    <!-- Question 7-->
-                    <li>
-                      <p class="mb-4">
-                        My hands, legs or entire body were shaking, trembling, or felt tingly.
-                      </p>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                        <label class="form-check-label" for="exampleRadios1">
-                          Not At All
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                          Mild
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                        <label class="form-check-label" for="exampleRadios3">
-                          Moderate
-                        </label>
-                      </div>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                        <label class="form-check-label" for="exampleRadios3">
-                          Severe
-                        </label>
-                      </div></li>
-                      <!--Question 7 Ends-->
-                      <br><br>
-                      <!-- Question 8-->
-                      <li>
-                        <p class="mb-4">
-                            I had difficulty breathing or swallowing.
-                        </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                          <label class="form-check-label" for="exampleRadios1">
-                            Not At All
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                            Mild
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Moderate
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Severe
-                          </label>
-                        </div></li>
-                        <!--Question 8 Ends-->
-                        <br><br>
-                        <!-- Question 9-->
-                      <li>
-                        <p class="mb-4">
-                            I felt sick to my stomach, like I was going to throw up, or had diarrhea.
-                        </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                          <label class="form-check-label" for="exampleRadios1">
-                            Not At All
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                            Mild
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Moderate
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Severe
-                          </label>
-                        </div></li>
-                        <!--Question 9 Ends-->
-                        <br><br>
-                        <!-- Question 10-->
-                      <li>
-                        <p class="mb-4">
-                            I felt dizzy, my head was spinning, or felt like I was going to faint.
-                        </p>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1">
-                          <label class="form-check-label" for="exampleRadios1">
-                            Not At All
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                            Mild
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Moderate
-                          </label>
-                        </div>
-                        <div class="form-check">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
-                          <label class="form-check-label" for="exampleRadios3">
-                            Severe
-                          </label>
-                        </div></li>
-                        <!--Question 10 Ends-->
-            </ol>  <br><br>
-            <button class="btn btn-warning font-weight-bold">
-                Check Result
-              </button>
-            </div>
+              
             <div id="about">
                 <div class="row mt-5 justify-content-between">
                 <div class="col-md-6">

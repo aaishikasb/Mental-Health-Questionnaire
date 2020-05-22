@@ -15,3 +15,7 @@ Basic Web Project for Seniors. <br>
 - Add Dark Mode
 - Add JavaScript to Evaluate
 - Update About The Developers Section
+
+## Collaborators
+- Aaishika S Bhattacharya
+- Akash Ramjyothi
